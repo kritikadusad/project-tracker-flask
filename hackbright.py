@@ -63,7 +63,7 @@ def get_project_by_title(title):
 
     QUERY = """
         SELECT title, description, max_grade
-        FROM projects
+        FROM projectsjhacks
         WHERE title = :title
         """
 
