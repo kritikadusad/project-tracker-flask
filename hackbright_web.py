@@ -60,10 +60,12 @@ def get_project():
 
 	project_title, description, max_grade = hackbright.get_project_by_title(title)
 	
+	github_and_grades = hackbright.get_grades_by_title(title)
+
 	return render_template("project_info.html", 
 							project_title=project_title,
 							description=description,
-							max_grade=max_grade)
+							max_grade=max_grade, github_and_grades = github_and_grades)
 
 
 
